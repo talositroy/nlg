@@ -1,0 +1,20 @@
+2020-03-24 23:23:22,789: DEBUG :Building prefix dict from the default dictionary ...
+2020-03-24 23:23:22,790: DEBUG :Loading model from cache /tmp/jieba.cache
+2020-03-24 23:23:23,607: DEBUG :Loading model cost 0.818 seconds.
+2020-03-24 23:23:23,607: DEBUG :Prefix dict has been built successfully.
+2020-03-24 23:25:31,355: DEBUG :Building prefix dict from the default dictionary ...
+2020-03-24 23:25:31,356: DEBUG :Loading model from cache /tmp/jieba.cache
+2020-03-24 23:25:32,273: DEBUG :Loading model cost 0.918 seconds.
+2020-03-24 23:25:32,273: DEBUG :Prefix dict has been built successfully.
+2020-03-25 00:09:33,621: DEBUG :Building prefix dict from the default dictionary ...
+2020-03-25 00:09:33,622: DEBUG :Loading model from cache /tmp/jieba.cache
+2020-03-25 00:09:34,391: DEBUG :Loading model cost 0.770 seconds.
+2020-03-25 00:09:34,391: DEBUG :Prefix dict has been built successfully.
+2020-03-25 00:13:21,214: DEBUG :Building prefix dict from the default dictionary ...
+2020-03-25 00:13:21,215: DEBUG :Loading model from cache /tmp/jieba.cache
+2020-03-25 00:13:21,976: DEBUG :Loading model cost 0.762 seconds.
+2020-03-25 00:13:21,976: DEBUG :Prefix dict has been built successfully.
+2020-03-25 00:15:57,615: DEBUG :Building prefix dict from the default dictionary ...
+2020-03-25 00:15:57,616: DEBUG :Loading model from cache /tmp/jieba.cache
+2020-03-25 00:15:58,382: DEBUG :Loading model cost 0.767 seconds.
+2020-03-25 00:15:58,383: DEBUG :Prefix dict has been built successfully.
