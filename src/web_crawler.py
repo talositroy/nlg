@@ -6,6 +6,7 @@ import datetime
 import time
 import os
 
+# 网络爬虫
 
 def wlog(text):
     path = '../data/log'
@@ -187,14 +188,24 @@ def do_from_url(url):
 #           '/nbs.D110000renmrb_01.htm'
 #     do_from_url(url)
 
-f = open('/mnt/project/NLPandNLG/DeepTalos/data/log', 'r')
-lines = f.readlines()
-for line in lines:
-    date = get_url_date(line)
-    i = line.index(date[0] + date[1] + date[2]) + len(date[0] + date[1] + date[2]) + 3
-    j = line.index('.htm')
-    banhao = line[i:j]
-    k = line.index(date[0] + date[1] + date[2] + '_') + len(date[0] + date[1] + date[2] + '_')
-    xuhao = line[k:k + 1].zfill(2)
-    fname = date[0] + date[1] + date[2] + '_' + banhao + '_' + xuhao
-    set_content_url(line, fname)
+# f = open('/mnt/project/NLPandNLG/DeepTalos/data/log', 'r')
+# lines = f.readlines()
+# for line in lines:
+#     date = get_url_date(line)
+#     i = line.index(date[0] + date[1] + date[2]) + len(date[0] + date[1] + date[2]) + 3
+#     j = line.index('.htm')
+#     banhao = line[i:j]
+#     k = line.index(date[0] + date[1] + date[2] + '_') + len(date[0] + date[1] + date[2] + '_')
+#     xuhao = line[k:k + 1].zfill(2)
+#     fname = date[0] + date[1] + date[2] + '_' + banhao + '_' + xuhao
+#     set_content_url(line, fname)
+
+text = get_url_text('https://www.nltk.org/nltk_data/')
+soup = BeautifulSoup(text, 'lxml')
+# for t in soup.find_all('url',id='package'):
+#     print(t)
+# print()
+# print(soup.find_all("package"))
+for item in soup.find_all("package"):
+    print(item.get("url"))
+print()
